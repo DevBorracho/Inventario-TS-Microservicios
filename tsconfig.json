@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext"], // Usar la última versión de JS para features y tipos
+    "target": "ESNext", // Compilar apuntando a la última versión JS
+    "module": "Preserve", // No transformar módulos, conservar sintaxis ES
+    "moduleDetection": "force", // Detecta módulos forzadamente para TS
+    "jsx": "react-jsx", // Soporte JSX (opcional, para React)
+    "allowJs": true, // Permitir archivos JS en el proyecto
+    "moduleResolution": "bundler", // Resolver módulos como los bundlers modernos
+    "allowImportingTsExtensions": true, // Permite importar archivos TS con extensiones explícitas
+    "verbatimModuleSyntax": true, // Mantener sintaxis de import/export tal cual
+    "noEmit": true, // No generar archivos JS (solo chequeo TS)
+    "strict": true, // Activa chequeos estrictos
+    "skipLibCheck": true, // Evitar chequeo en libs para acelerar compilación
+    "noFallthroughCasesInSwitch": true, // Evita errores por fallthrough en switch
+    "noUncheckedIndexedAccess": true, // Chequea accesos a arrays y objetos
+    "noImplicitOverride": true, // Obliga a usar override explícito
+    "noUnusedLocals": false, // No muestra warning por variables no usadas
+    "noUnusedParameters": false, // No muestra warning por parámetros no usados
+    "noPropertyAccessFromIndexSignature": false // Permite accesos no estrictos
+  }
+}
