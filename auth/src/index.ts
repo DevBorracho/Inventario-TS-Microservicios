@@ -1,9 +1,10 @@
 import express from "express";
 import "dotenv/config";
 import connectDb from "./config/db.ts";
-
+import cookieParser from "cookie-parser";
 const app = express();
 connectDb();
+app.use(cookieParser());
 app.use(express.json());
 app.get("/ping", (_req, res) => {
   res.send("pong");
