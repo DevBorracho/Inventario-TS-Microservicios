@@ -1,0 +1,13 @@
+En un sistema de inventario típico con microservicios, el orden recomendado sería:
+
+Auth ✅ (lo tienes hecho)
+
+Products 📦 → Gestión de productos: nombre, descripción, precio, stock, categoría…
+
+Categories 🏷 → Organización de los productos (puede ser opcional si quieres simplificar).
+
+Stock 📊 → Movimientos de inventario (entrada, salida, ajustes).
+
+Orders 🛒 → Registra las ventas o pedidos.
+
+Reports 📑 → Generación de reportes de ventas, stock, etc.

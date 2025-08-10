@@ -13,6 +13,7 @@ const createToken = (payload: JWTPayload) => {
       },
       (err, token) => {
         if (err || !token) return reject(err ?? "el token es undefine");
+        console.log(token);
         return resolve(token);
       }
     );
