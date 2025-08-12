@@ -4,10 +4,11 @@ Auth ✅ (lo tienes hecho)
 
 Products 📦 → Gestión de productos: nombre, descripción, precio, stock, categoría…
 
-Categories 🏷 → Organización de los productos (puede ser opcional si quieres simplificar).
+Categories hay varias asi que hay que hacer un enum
 
 Stock 📊 → Movimientos de inventario (entrada, salida, ajustes).
 
 Orders 🛒 → Registra las ventas o pedidos.
 
 Reports 📑 → Generación de reportes de ventas, stock, etc.
+
