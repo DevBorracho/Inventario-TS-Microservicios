@@ -6,7 +6,6 @@ const router = Router();
 
 router.post("/register", async (req, res) => {
   const { username, email, password } = req.body;
-  console.log(req.body);
   try {
     const passwordHash: string = await hash(password, 8);
     const user = await User.findOne({ email: email });
@@ -16,7 +15,6 @@ router.post("/register", async (req, res) => {
       email: email,
       password: passwordHash,
     });
-    console.log(newUser);
     await newUser.save();
     const token = await createToken({ id: newUser.id });
     return res.json({
@@ -46,6 +44,10 @@ router.post("/login", async (req, res) => {
   } catch (error) {
     return res.json(error);
   }
+});
+
+router.post("/logout", (req, _res) => {
+  return _res.json({ msg: "sesion cerrada correctamente" });
 });
 
 export default router;

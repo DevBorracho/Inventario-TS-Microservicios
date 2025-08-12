@@ -34,7 +34,7 @@
     "jsonwebtoken": "^9.0.2"
   },
   "scripts": {
-    "dev": "node --watch ./src/index.ts",
-    "start": "node ./src/index.ts"
+    "dev": "node --watch ./index.ts",
+    "start": "node ./index.ts"
   }
 }

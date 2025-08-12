@@ -29,7 +29,6 @@ const verifyToken = async (
   next: NextFunction
 ) => {
   const { token } = req.cookies;
-
   if (!token) {
     return res.status(401).json({ msg: "no tienes permisos" });
   }
