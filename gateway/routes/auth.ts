@@ -16,7 +16,10 @@ router.post("/register", async (req, res) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(req.body),
     });
-    const data = await response.json();
+    const data = (await response.json()) as {
+      accessToken: string;
+      [key: string]: any;
+    };
 
     if (!response.ok) {
       return res.status(400).json(data);
@@ -35,7 +38,10 @@ router.post("/login", async (req, res) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(req.body),
     });
-    const data = await response.json();
+    const data = (await response.json()) as {
+      accessToken: string;
+      [key: string]: any;
+    };
 
     if (!response.ok) {
       return res.status(400).json(data);
