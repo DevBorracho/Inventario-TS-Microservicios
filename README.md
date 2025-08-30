@@ -1,4 +1,4 @@
-# inventario-ts
+# Ecomerce-ts
 
 To install dependencies:
 
